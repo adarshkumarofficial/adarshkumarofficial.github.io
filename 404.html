@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page Not Found!</title>
+    <style>
+        :root {
+            --main-color: #55a2e0;
+            --text-color: #15386d;
+            --bg-color: rgb(255, 255, 255);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            color: var(--text-color);
+        }
+
+        .container {
+            text-align: center;
+            background-color: #eaf6fd;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+            width: 90%;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            color: var(--main-color);
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: var(--text-color);
+            margin-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--main-color);
+            font-weight: 600;
+        }
+
+        a:hover {
+            color: #0d6db7;
+        }
+
+        button {
+            padding: 10px 24px;
+            font-size: 1rem;
+            color: white;
+            background-color: var(--main-color);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #3d89c5;
+            transform: scale(1.05);
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: var(--main-color);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border-top: 1px solid #ddd;
+            font-size: 0.9rem;
+        }
+
+        #home {
+            color: white;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+
+        #home:hover {
+            color: #dcefff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>404 ERROR</h1>
+        <p>Page not found<br>If you think this is a bug, mail us at <a href="mailto:adarshkumarlawandjustice@gmail.com">adarshkumarlawandjustice@gmail.com</a></p>
+        <div style="margin-top: 25px;">
+            <button onclick="window.location.reload();">Reload</button>
+        </div>
+    </div>
+
+    <footer>
+        <a id="home" href="index.html">&#8592; Back to Home</a>
+        <p>&copy; 2025 Adarsh Kumar</p>
+    </footer>
+
+</body>
+
+</html>

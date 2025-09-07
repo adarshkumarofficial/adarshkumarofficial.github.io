@@ -1,0 +1,112 @@
+/* style.css */
+
+:root {
+  --main-color: #55a2e0;
+  --text-color: #15386d;
+  --bg-color: rgb(255, 255, 255);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-container {
+  background-color: var(--main-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 20px;
+  background-color: var(--main-color);
+  padding: 10px 0;
+  border-radius: 8px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #f0f0f0;
+  border-radius: 6px;
+}
+
+main {
+  margin-top: 30px;
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #93ceff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+section h2 {
+  margin-bottom: 15px;
+  color: #004688;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  background-color: var(--main-color);
+  border-radius: 10px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+}
