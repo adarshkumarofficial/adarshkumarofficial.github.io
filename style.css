@@ -76,7 +76,7 @@ main {
 section {
   margin-bottom: 40px;
   padding: 20px;
-  background-color: #93ceff;
+  background-color: #addaff;
   border: 1px solid #eee;
   border-radius: 10px;
 }
@@ -110,3 +110,4 @@ ul li {
     height: 120px;
   }
 }
+
